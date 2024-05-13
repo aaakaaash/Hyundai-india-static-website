@@ -1,0 +1,463 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Reset ends */
+/* global variables */
+:root{
+    --highlightedMarkdownBackground: #fff6d7;
+    --highlightedMarkdownText: #606b70;
+    --primaryColor: rgb(0,44,95);
+    --primaryTextColor: #FFFFFF;
+    --fontFamily: Roboto, sans-serif;
+}
+body{
+    font-family: var(--fontFamily);
+}
+/* main header sections */
+header{
+    max-height: 60px;
+}
+header .Top-section{
+    display:flex;
+
+}
+header .Top-section ul{
+    display: flex;
+}
+header .Top-section .Access-profile .Container{
+    display: flex;
+    padding: 15px 20px;
+    margin-left: auto;
+    margin-right: 120px;
+}
+header .Top-section .Access-profile .Container .Log-in-logo
+{
+    padding-top: 6px;
+    padding-right: 8px;
+
+}
+header .Top-section .Access-profile{
+    margin-right: 0;
+}
+header .Top-section .web-view-menu{
+    margin: auto;
+}
+/* mobile css */
+@media (max-width:767px) {
+    header .Top-section .web-view-menu{
+        display:none;
+    }
+}
+header .Top-section .web-view-menu .css-menu{
+    padding-right: 120px;
+}
+header .Top-section .H-logo{
+    padding: 20px 20px;
+}
+header .Top-section ul li{
+    padding: 20px 11px;
+    letter-spacing: 1.1px;
+    border-bottom: 4px solid #fff; 
+    font-size: 16px;
+    
+}
+header .Top-section ul li a{
+    font-family: var(--fontFamily);
+    color:var(--highlightedMarkdownText);
+}
+.App-body .App-toproot .image-container{
+    overflow: hidden;
+    object-fit: cover;
+    max-height:600px;
+    width: 100%;
+}
+.App-body .App-toproot .image-containerimg{
+    height:600px;
+    
+}
+.App-body .App-toproot .Container{
+    max-height: 600px;
+    
+}
+.App-body .App-toproot{
+    position: relative;
+}
+
+.App-body .App-toproot .Title-Section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+}
+.left-btn-corner{
+    background: rgba(0, 0, 0, .4);
+    width: 395px;
+    height: 305px;
+    margin-top: 60px;
+    padding: 12px;
+    margin-left: -320px;
+}
+.left-btn-corner img{
+    max-width: 371px;
+    height: 40px;
+    margin: 30px 0 30px 2px;
+}
+.top-title{
+    padding-top: 62px;
+    padding-left: 28px;
+}
+.top-title .title4{
+    color: #000;
+    font-size: 36px;
+    line-height: 36px;
+}
+.top-title .title5{
+    padding-top: 20px;
+}
+.left-btn-corner .title1{
+    font-size: 16px;
+    font-family: HyundaiSansText, sans-serif;
+    color: var(--primaryTextColor);
+    margin: 5px 15px 45px;
+}
+.left-btn-corner .title2{
+font-size: 12px;
+    font-family: HyundaiSansText, sans-serif;
+    color: #ccc;
+    margin: 25px 15px 15px;
+}
+.left-btn-corner .Button-area{
+    line-height: 1;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+.left-btn-corner .Button-area a{
+    color: var(--primaryTextColor);
+}
+.left-btn-corner .Button-area .New-car-button{
+background: linear-gradient(-30deg, #00aad2 50%, #0eb5dc 0);
+padding: 15px 5px;
+margin: 12px;
+font-size: 18px;
+box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+width: 160px;
+}
+.left-btn-corner .Button-area .New-car-button1{
+    background: linear-gradient(-30deg, #00aad2 50%, #0eb5dc 0);
+    padding: 15px 5px;
+    margin: 12px;
+    font-size: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    width: 160px;
+}
+.App-toproot .Scrolldown{
+    transform: translateY(-72px)
+}
+.Scrolldown a{
+    padding-left: 40px;
+}
+.newcar-section .Service-section{
+    background-color: #2d2d2d;
+    padding: 15px 20px;
+    margin: 50px 0;
+    max-width:1170px;
+    height:465px;
+}
+.newcar-section .container{
+    display: flex;
+    justify-content: center;
+
+}
+.newcar-section .Service-section .main-title{
+    text-align: center;
+}
+
+.newcar-section .Service-section .content-section{
+    display: flex;
+}
+.Service-section .main-title{
+    padding-top: 20px;
+}
+.Service-section .title{
+    font-family: HyundaiSansText, sans-serif;
+    font-size: 22px;
+    color: var(--primaryTextColor);
+    position: relative;
+    margin-bottom: 18px;
+}
+.Service-section .title::after{
+    content: "";
+    height: 1px;
+    width: 100px;
+   background-color: var(--primaryTextColor);
+    position: absolute;
+    bottom: -11px;
+    transform: translateX(-75px);
+}
+.Service-section .title1{
+    font-family: HyundaiSansText, sans-serif;
+    font-size: 32px;
+    color: #00aad2;
+}
+.newcar-section .content-section .content-1{
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    flex:1;
+}
+.newcar-section .content-section .content-1 .Title{
+text-align: left;
+    font-size: 26px;
+    color: var(--primaryTextColor);
+    font-family: HyundaiSansText, sans-serif;
+    margin: 20px 0;
+}
+.newcar-section .content-section .content-1 .para{
+    text-align: left;
+    font-size: 16px;
+    color: var(--primaryTextColor);
+    font-family: HyundaiSansText, sans-serif;
+    line-height: 22px;
+}
+.App-body-in .Scrolldown{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+.App-body-in .used-car-section{
+    height:650px;
+    margin-top: 88px;
+    background-color: #f1eeee;
+    display: flex;
+    justify-content: center;
+}
+.App-body-in .used-car-section .container{
+    background-color:var(--primaryTextColor);
+    padding: 25px 55px;
+    margin-left: -5px;
+    margin-right: 0;
+    transform: translateY(50px);
+    max-width: 1170px;
+    height:432px;
+    display: flex;
+    justify-content: center;
+}
+.App-body-in .used-car-section .container .main-title{
+text-align: center;
+margin:auto;
+}
+.App-body-in .used-car-section .container .How-it-works{
+    padding-left: 0px;
+}
+.App-body-in .used-car-section .container .title1{
+font-family: HyundaiSansText, sans-serif;
+    font-size: 31px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.App-body-in .used-car-section .container .title2{
+font-family: HyundaiSansText, sans-serif;
+    font-size: 15px;
+    color: #000;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 22px;
+    letter-spacing: .8px;
+    width: 55%;
+}
+.App-body-in .used-car-section .container .sub-section{
+    display: flex;
+    padding-top:50px;
+    padding-right: 0px;
+}
+.App-body-in .used-car-section .container .sub-section1{
+    flex: 1;
+
+}
+.App-body-in .used-car-section .container .sub-section1 p{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-family: HyundaiSansText, sans-serif;
+    line-height: 22px;
+    margin-top: 20px;
+    letter-spacing :.9px;
+    max-width:318px;
+    padding-left: 25px;
+}
+.App-body-in .used-car-section .container .sub-section1 .img-section1{
+    padding-bottom: 15px;
+} 
+.App-body-in .used-car-section .container .sub-section1 .img-section{
+    text-align: center;
+}
+.App-body .Scrolldown1{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-101px);
+    padding-left: 50px;
+}
+.Main-App-body .bottom-feature-section{
+    height: 650px;
+}
+.Main-App-body .bottom-feature-section .container{
+    display: flex;
+    width:100%;
+    height:552px;
+    justify-content: center;
+}
+.Main-App-body .bottom-feature-section .container .img-section{
+    display: flex;
+    background-color: #fff;
+    padding: 25px;
+    margin: 50px 0;
+}
+.Main-App-body .bottom-feature-section .container .img-section .image-content{
+    width: 287.5px;
+}
+.Main-App-body .bottom-feature-section .container .img-section .image-content img{
+   width: 287.5px;
+   height:224px;
+   
+}
+.Main-App-body .bottom-feature-section .container .img-section .image-content .feature-section{
+    padding: 20px; 
+    background-color: #696969; 
+    transform: translateY(-3.9px); 
+}
+.feature-section .title{
+color: var(--primaryTextColor);
+    font-family: HyundaiSansText, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+.feature-section .content{
+    font-size: 16px;
+    margin: 30px 0;
+    line-height: 22px;
+    color: var(--primaryTextColor);
+    text-align: center;
+}
+.Main-App-body .bottom-feature-section .container .img-section .image-content .feature-section.f2{
+    background-color: #505050;
+}
+.Main-App-body .bottom-feature-section .container .img-section .image-content .feature-section.f3{
+    background-color: #444;
+}
+.Main-App-body .bottom-feature-section .container .img-section .image-content .feature-section.f4{
+    background-color: #373737;
+}
+.App-footer{
+    width:100%;
+
+}
+.App-footer .footer-first-half{
+    width:100%;
+}
+.App-footer .footer-first-half ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 25px 25px 25px;
+    background-color: #2e2e2e;
+}
+.App-footer .footer-first-half ul a{
+color: #858585;
+font-size: 17px;
+font-family: HyundaiSansHead;
+line-height: 1.2;
+font-weight: 800;
+}
+.App-footer .footer-first-half ul a.first{
+    padding-left: 30px;
+}
+.App-footer .footer-first-half ul a.last{
+    padding-right: 30px;
+}
+.footer-second-half{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 20px;
+}
+.social-medias a{
+    padding-left: 15px;
+    color:var(--primaryTextColor)
+}
+.Disclaimer{
+    color: #858585;
+    font-size: 14px;  
+    
+}
+.Disclaimer a{
+    color: #858585;
+    padding-left: 241px;
+}
+.Disclaimer .copy-right .copy-section{
+    padding-right:60px;
+    padding-top: 5px; 
+}
+#chat-button{
+    box-shadow: transparent 0px 0px 0px !important;
+    background: none;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    display: block;
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    border: none;
+    animation: tiltup 2s linear 2s forwards,tiltdown 2s linear 5s forwards;
+    animation: tiltup-second 1s linear 5s forwards;
+    animation-iteration-count: infinite;
+}
+
+#chat-button img{
+    border-radius: 0;
+    height: 78px;
+    width: 77px;
+}
+@keyframes tiltup{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+@keyframes tiltdown{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes tiltup-second{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}
